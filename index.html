@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Deli Permata Sari</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            color: #263445;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #173b57;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+        }
+
+        nav {
+            background: #245675;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px #00000012;
+        }
+
+        .profile img {
+            width: 180px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .biodata {
+            flex: 1;
+        }
+
+        h2 {
+            color: #173b57;
+            margin-bottom: 12px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-top: 22px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px #00000012;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        .download {
+            display: inline-block;
+            background: #173b57;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #173b57;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery img {
+                height: 140px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>Halaman Web Profil Pribadi</p>
+    </header>
+
+    <nav>
+        <a href="#profil">Profil</a>
+        <a href="#tentang">Tentang Saya</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#video">Video</a>
+        <a href="#download">Download</a>
+    </nav>
+
+    <main>
+
+        <div class="profile" id="profil">
+            <img
+                src="/pratikumKe03/layout/Deli permata sari_TI.jpg"
+                alt="Foto profil">
+
+            <div class="biodata">
+                <h2>Deli Permata Sari</h2>
+                <p><strong>Status:</strong> Mahasiswa</p>
+                <p><strong>Kampus:</strong> STT Terpadu Nurul Fikri</p>
+                <p><strong>Program Studi:</strong> Teknik Informatika</p>
+                <p><strong>Hobi:</strong> Membaca</p>
+                <p><strong>Cita-cita:</strong> Menjadi Data Analyst</p>
+                <p><strong>Email:</strong> deli.permata377@gmail.com</p>
+            </div>
+        </div>
+
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+
+            <p>
+                Perkenalkan, nama saya Deli Permata Sari.
+                Saya adalah mahasiswa Program Studi Teknik Informatika
+                di STT Terpadu Nurul Fikri. Saya memiliki semangat
+                untuk belajar hal-hal baru, terutama dalam bidang
+                teknologi informasi, desain web, dan pengolahan data.
+                Saya percaya bahwa pendidikan, kedisiplinan, dan
+                kerja keras merupakan hal penting untuk mencapai cita-cita.
+            </p>
+
+            <br>
+
+            <p>
+                Selama kuliah, saya ingin meningkatkan kemampuan
+                dalam pemrograman, analisis data, dan pembuatan
+                website. Saya juga ingin menjadi pribadi yang mandiri,
+                bertanggung jawab, dan bermanfaat bagi orang lain.
+                Ke depannya, saya berharap dapat berkarier sebagai
+                Data Analyst serta terus mengembangkan kemampuan
+                dan pengalaman di bidang teknologi.
+            </p>
+        </section>
+
+        <section id="galeri">
+            <h2>Koleksi Foto</h2>
+            <p>Beberapa foto dari kegiatan positif.</p>
+            <br>
+
+            <div class="gallery">
+                <img
+                    src="/pratikumKe03/layout/logo/IMG20260124142511.jpg"
+                    alt="Kegiatan pendidikan">
+
+                <img
+                    src="/pratikumKe03/layout/logo/IMG-20261020-WA0085.jpg"
+                    alt="Belajar teknologi">
+
+                <img
+                    src="/pratikumKe03/layout/logo/IMG_20260520_095411_199.jpg"
+                    alt="Pemrograman komputer">
+
+                <img
+                    src="/pratikumKe03/layout/logo/Screenshot_20261021_130503_Gallery.jpg"
+                    alt="Potret seseorang">
+
+                
+            </div>
+        </section>
+
+        <section id="video">
+            <h2>Konten Multimedia: Video</h2>
+            <p>
+                video diri saya pribadi.
+            </p>
+            <br>
+
+            <video controls>
+                <source
+                    src="/pratikumKe03/layout/logo/lv_7311621062582717704_20261021133307.mp4"
+                    type="video/mp4">
+                Browser Anda tidak mendukung pemutaran video.
+            </video>
+        </section>
+
+        <section id="download">
+            <h2>Download File</h2>
+            <p>
+                Klik tombol berikut untuk mengunduh file biodata
+                dalam format teks.
+            </p>
+
+            <a class="download"
+               href="/pratikumKe03/bidodata.txt"
+               download="Biodata-Deli-Permata-Sari">
+                Download Biodata
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Deli Permata Sari</p>
+        <p>Praktikum 3 - Layout Halaman Web</p>
+        <p>Desain UI/UX Pemrograman Web | STT NF</p>
+    </footer>
+
+</body>
+</html>
